@@ -10,8 +10,7 @@ export function buildFoundersPersonalityTraitsSurveyRequest(): VeridaRequest {
   return {
     type: "userProfileApiRequest",
     did: commonConfig.SURVEY_APPLICATION_VERIDA_DID,
-    purpose:
-      "Founders Hub wants to survey your personality traits as a founder.",
+    purpose: "We want to survey your personality traits as a founder.",
     profileJsonSchemaUrl: `${commonConfig.BASE_URL}/schemas/founder-personality-traits.json`,
     endpointUrl: commonConfig.DATA_PROCESSING_ENDPOINT_URL,
     endpointParams: {
