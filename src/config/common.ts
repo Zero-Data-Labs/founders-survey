@@ -7,6 +7,12 @@ const commonConfigCheckResult = CommonConfigSchema.safeParse({
   // the code(like here). It also allows us to have shorter names.
   BASE_URL: process.env.NEXT_PUBLIC_BASE_URL,
   DEV_MODE: process.env.NEXT_PUBLIC_DEV_MODE,
+  SURVEY_APPLICATION_VERIDA_DID:
+    process.env.NEXT_PUBLIC_SURVEY_APPLICATION_VERIDA_DID,
+  VERIDA_VAULT_BASE_URL: process.env.NEXT_PUBLIC_VERIDA_VAULT_BASE_URL,
+  DATA_PROCESSING_ENDPOINT_URL:
+    process.env.NEXT_PUBLIC_DATA_PROCESSING_ENDPOINT_URL,
+  SURVEY_DATA_SCHEMA_ID: process.env.NEXT_PUBLIC_SURVEY_DATA_SCHEMA_ID,
   isClient: !(typeof window === "undefined"),
   appVersion: version,
 })
